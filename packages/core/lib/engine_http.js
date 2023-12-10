@@ -408,6 +408,7 @@ HttpEngine.prototype.step = function step(requestSpec, ee, opts) {
             return template(v, context);
           }
         );
+        console.log({templatedHeaders})
         requestParams.headers = templatedHeaders;
 
         // We compute the url here so that the cookies are set properly afterwards
