@@ -907,7 +907,7 @@ function maybePrependBase(uri, config) {
  */
 function lowcaseKeys(h) {
   return _.transform(h, function (result, v, k) {
-    result[k.toLowerCase()] = v;
+    result[k] = v;
   });
 }
 
